@@ -8,7 +8,8 @@ const DashboardWrapper = ({ children }) => {
   const { Header, Content } = Layout;
   return (
     <Layout>
-      <Sidebar
+      <Sidebar 
+        className='fixed-sidebar'
         _this={{
           setIsSidebarOpen,
           isSidebarOpen,
@@ -31,6 +32,7 @@ const DashboardWrapper = ({ children }) => {
             padding: 24,
             background: "#fff",
             minHeight: 280,
+            overflow: "auto",
           }}
         >
           {children}
